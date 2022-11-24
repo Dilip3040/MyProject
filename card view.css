@@ -1,0 +1,204 @@
+*{
+    margin: 0px;
+}
+.Navbar{
+    display: flex;
+    justify-content:space-evenly;
+    background-color: rgb(66, 66, 231);
+    align-items: center;
+    padding-left: 30px;
+}
+.Navbar li{
+    margin-left: 150px;
+    display: inline-block;
+    padding-left: 30px;
+    position: relative;
+    right: 400px;
+   
+}
+.Navbar a{
+    text-decoration: none;
+    color: white;
+}
+.Navbar a:hover{
+    background-color:white;
+    color: darkgray;
+   
+    
+}
+
+.Navbar p{
+    margin-right: 300px;
+    color: white;
+}
+
+
+
+
+.Customers{
+    margin-top: 60px;
+    display: flex;
+}
+.Customers img{
+    margin-left: 10px;
+    position: relative;
+    bottom: 10px;
+}
+.Customers p{
+    padding-bottom: 15px;
+    padding-left: 27px;
+    color: rgb(52, 49, 49);
+    font-size: 25px;
+    align-items: center;
+}
+.Views{
+    align-items: center;
+    
+}
+.Views a{
+    text-decoration: none;
+    position: relative;
+ bottom: 6px;
+ color: gray;
+    
+}
+.Views a:hover{
+    color: black;
+}
+.Views img{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.filter{
+    position: relative;
+    left: 1300px;
+    bottom: 50px;
+}
+
+.filter input{
+    position: relative;
+    top: 10px;
+}
+
+
+
+
+.Table{
+    display: flex;
+    
+}
+.Table table{
+    margin-left: 60px;
+  
+}
+
+.Table th{
+    background-color: rgb(10, 10, 111);
+    width: 300px;
+    color: white;
+
+   
+}
+
+.Table b{
+    position: relative;
+    bottom: 10px;
+    right: 80px;
+    font-size: 16px;
+}
+
+.edit{
+    position: relative;
+    left: 90px;
+}
+
+#edit{
+    position: relative;
+    left: 60px;
+}
+
+.Table td{
+    
+    border: 1px solid black;
+   position: relative;
+   bottom: 2px;
+    display: flex;
+
+ 
+}
+Table p{
+   font-size: 20px;
+   position: relative;
+   top: 10px;
+   left: 10px;
+    margin-bottom:10px;
+} 
+
+.Table2 b{
+    position: relative;
+    left: -54px;
+}
+
+.Table a{
+    text-decoration: none;
+  
+}
+
+
+.Tab{
+    display: flex;
+    margin-top: 25px;
+    
+}
+.Tab table{
+    margin-left: 60px;
+  
+}
+
+.Tab th{
+    background-color: rgb(10, 10, 111);
+    width: 300px;
+    color: white;
+
+   
+}
+
+.Tab b{
+    position: relative;
+    bottom: 10px;
+    right: 80px;
+    font-size: 16px;
+}
+
+.edit{
+    position: relative;
+    left: 90px;
+}
+
+#edit{
+    position: relative;
+    left: 60px;
+}
+
+.Tab td{
+    
+    border: 1px solid black;
+   position: relative;
+   bottom: 2px;
+    display: flex;
+
+ 
+}
+Tab p{
+   font-size: 20px;
+   position: relative;
+   top: 10px;
+   left: 10px;
+    margin-bottom:10px;
+} 
+
+.Tab a{
+    text-decoration: none;
+  
+}
