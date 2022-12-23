@@ -5,6 +5,7 @@ pipeline{
             steps{
                 sh 'ssh -i EC2Server.pem ubuntu@44.204.92.44'
             }
+        }
             stage('move to super user'){
                 steps{
                 sh 'sudo su'
@@ -20,7 +21,6 @@ pipeline{
                 sh 'sudo apt-get insyall apache2 -y'
             }
            }
-        }
         stage('clone the project from git lab'){
             steps{
                 sh 'git clone https://gitlab.com/dilipkondiboyina2320/mphasis-project.git -b master'
