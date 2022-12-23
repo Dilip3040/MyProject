@@ -1,21 +1,7 @@
 pipeline{
     agent any
     stages{
-        stage('Enter into server'){
-            steps{
-                sh 'ssh -i EC2Server.pem ubuntu@44.204.92.44'
-            }
-        }
-            stage('move to super user'){
-                steps{
-                sh 'sudo su'
-            }
-            }
-           stage('Back to root directory'){
-             steps{
-                sh 'cd ../..'
-            }
-           }
+        
            stage('Install apache2'){
              steps{
                 sh 'sudo apt-get insyall apache2 -y'
