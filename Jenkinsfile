@@ -4,7 +4,7 @@ pipeline{
         
            stage('Install apache2'){
              steps{
-                sh 'sudo apt-get insyall apache2 -y'
+                sh 'sudo apt-get install apache2 -y'
             }
            }
         stage('clone the project from git lab'){
