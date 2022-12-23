@@ -3,7 +3,16 @@ pipeline{
     stages{
         stage("Install apache2"){
             steps{
-                sh "sudo  apt-get install apache2 -y"
+                sh "ssh -i EC2Server.pem ubuntu@44.204.92.44"
+            }
+            steps{
+                sh "sudo su"
+            }
+            steps{
+                sh "cd ../.."
+            }
+            steps{
+                sh "sudo apt-get insyall apache2 -y"
             }
         }
         stage("clone the project from git lab"){
