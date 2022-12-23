@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("Install apache2"){
             steps{
-                sh "sudo apt-get install apache2"
+                sh "sudo  apt-get install apache2 -y"
             }
         }
         stage("clone the project from git lab"){
