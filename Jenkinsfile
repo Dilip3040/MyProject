@@ -1,22 +1,25 @@
 pipeline{
     agent any
     stages{
-        
-           stage('Install apache2'){
-             steps{
-                sh 'sudo -S apt-get install apache2'
-            }
-           }
-        stage('clone the project from git lab'){
+        stage('Present working Directory'){
             steps{
-                sh 'git clone https://gitlab.com/dilipkondiboyina2320/mphasis-project.git -b master'
+                sh 'pwd'
             }
         }
-        stage('push to html'){
+
+        stage('clean working directory'){
             steps{
-                sh 'cd var/www/html'
+                sh ' rm -r *'
+            sh 'rm -r ../../../../www/html'
+            }
+        }
+
+        stage('copy to html'){
+            steps{
+                sh 'mv wedding/* ../../../../www/html'
             }
         }
         
+       
     }
 }
