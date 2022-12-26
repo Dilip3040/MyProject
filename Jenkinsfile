@@ -3,20 +3,20 @@ pipeline{
     stages{
         stage('Present working Directory'){
             steps{
-                sh 'pwd'
+                sh ' pwd '
             }
         }
 
         stage('clean working directory'){
             steps{
-                sh ' rm -r *'
-            sh 'rm -r ../../../../www/html/*'
+                sh ' rm -r * '
+                sh ' rm -r ../../../../www/html/* '
             }
         }
 
         stage('copy to html'){
             steps{
-                sh 'mv wedding/* ../../../../www/html'
+                sh ' mv wedding/* ../../../../www/html '
             }
         }
         
