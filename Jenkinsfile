@@ -10,7 +10,7 @@ pipeline{
         stage('clean working directory'){
             steps{
                 sh ' rm -r *'
-            sh 'rm -r ../../../../www/html'
+            sh 'rm -r ../../../../www/html/*'
             }
         }
 
